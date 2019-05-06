@@ -94,14 +94,13 @@ a:hover{
   float: left;
   margin: 0 120px 0 0;
 }
-/* Nav @media */
+/* Nav @media 800 */
 @media(max-width: 800px){
 .headerBox{
   display: flex;
   flex-direction: column;
 }
 .navBox{
-  order: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +111,30 @@ a:hover{
   order: -1;
   margin: 0 auto;
 }
+}
+/* Nav @media 500 */
+@media(max-width: 500px){
+  .headerBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .navBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBox a{
+    box-shadow: 1px;
+    border-bottom: 1px solid lightgrey;
+  }
+  .logoBox{
+    display: flex;
+    justify-content: center;
+    order: -1;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgrey;
+  }
 }
 /* Title */
 .titleSection {
@@ -136,7 +159,15 @@ a:hover{
   padding: 0px 100px 0px 0px;
   float: right;
 }
-/* Title @media */
+.halfWidth button{
+  width: 150px;
+  height: 30px;
+  border: 1px solid lightgrey;
+}
+.titleSection button:hover{
+  border: 1px solid black;
+}
+/* Title @media 800 */
 @media(max-width: 800px){
 .titleSection img{
   display: none;
@@ -174,6 +205,37 @@ a:hover{
   column-count: 2;
   margin: 10px;
 }
+/* Mid page @media */
+@media(max-width: 500px){
+.paragraphs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:10px auto;
+}
+.paragraphs h2{
+  margin:10px auto;
+}
+.paragraphsBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bttmPrgphs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+}
+/* Bttm page */
 .middle-img {
     display: flex;
   width: 98%;
@@ -182,6 +244,7 @@ a:hover{
 .bttmPrgphs {
   column-count: 3;
   margin: 20px 0px;
+  font-weight: bold;
 }
 .phn {
   margin: 20px 0px;
