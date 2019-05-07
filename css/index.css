@@ -63,12 +63,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Body */
 
-body {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 /* Nav Bar */
 .headerBox {
   display: flex;
@@ -114,6 +109,7 @@ a:hover{
 }
 /* Nav @media 500 */
 @media(max-width: 500px){
+  
   .headerBox{
     display: flex;
     flex-direction: column;
@@ -205,7 +201,7 @@ a:hover{
   column-count: 2;
   margin: 10px;
 }
-/* Mid page @media */
+/* Mid page @media 500 */
 @media(max-width: 500px){
 .paragraphs{
   display: flex;
@@ -253,7 +249,7 @@ a:hover{
   margin: 20px;
   text-align: center;
 }
-/* About Page */
+/* About Page Nav */
 .headerAbout  {
   display: flex;
   justify-content: space-evenly;
@@ -279,6 +275,30 @@ a:hover{
   text-decoration: none;
   color: black;
 }
+/* About Page @media800 Nav */
+@media(max-width: 800px){
+.headerAbout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+/* About Page @media500 Nav  */
+@media(max-width: 500px){
+.headerAbout{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+}
+.navBarAbout{
+   display: flex;
+   flex-direction: column;
+}
+}
+/* About Page Mid */
 .aboutBox {
   display: flex;
   flex-direction: column;
@@ -293,7 +313,6 @@ a:hover{
   display: flex; 
   flex-flow: wrap;
   justify-content: center;
-   
 }
 .box {
   display: flex;
@@ -314,6 +333,7 @@ a:hover{
   margin: 20px;
   text-align: center;
 }
+/* About Page Footer */
 footer {
   width: 100%;
   background: black;
