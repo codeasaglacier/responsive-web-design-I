@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html, body {
@@ -252,4 +252,86 @@ a:hover{
 .copyRight {
   margin: 20px;
   text-align: center;
+}
+/* About Page */
+.headerAbout  {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline; 
+}
+.lambdaLogo{
+  display: flex;
+}
+.imgBox{
+  margin: 20px 0;
+  display: flex;
+}
+.imgBox img{
+  width: 100%;
+}
+.navBarAbout {
+  padding: 40px 0 0 0;
+  margin: 0 10px;
+  font-size: 15px; 
+}
+.navBarAbout a {
+  padding: 20px 30px;
+  text-decoration: none;
+  color: black;
+}
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.aboutBox h2{
+  font-size: 20px;
+}
+.boxesBox {
+  display: flex; 
+  flex-flow: wrap;
+  justify-content: center;
+   
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 20px auto;
+}
+.box p{
+  text-align: center;
+}
+.box button{
+  background: white;
+  border: 1px solid lightgrey;
+}
+.bottomBox {
+  margin: 20px;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  background: none;
 }
