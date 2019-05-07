@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html, body {
@@ -63,16 +63,16 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Body */
 
 body {
   max-width: 1000px;
   margin: 0 auto;
 }
+/* Nav Bar */
 .headerBox {
   display: flex;
   justify-content: space-evenly;
-  
 }
 .navBox{
     display: flex;
@@ -94,34 +94,106 @@ a:hover{
   float: left;
   margin: 0 120px 0 0;
 }
+/* Nav @media 800 */
+@media(max-width: 800px){
+.headerBox{
+  display: flex;
+  flex-direction: column;
+}
+.navBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoBox{
+  display: flex;
+  justify-content: center;
+  order: -1;
+  margin: 0 auto;
+}
+}
+/* Nav @media 500 */
+@media(max-width: 500px){
+  .headerBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .navBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBox a{
+    box-shadow: 1px;
+    border-bottom: 1px solid lightgrey;
+  }
+  .logoBox{
+    display: flex;
+    justify-content: center;
+    order: -1;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgrey;
+  }
+}
+/* Title */
 .titleSection {
   display: flex;
   justify-content:space-between;
   width: 100%;
-  margin: 0px 0px 20px;
 }
 .halfWidth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .titleSection h1 {
-  margin: 0px 0px 0px 20px;
   font-size: 90px;
   text-align: center;
 }
 .titleSection button {
-  
-  margin: 0px 0px 0px 150px;
+  background: white;
 }
 .titleSection img {
   padding: 0px 100px 0px 0px;
   float: right;
 }
+.halfWidth button{
+  width: 150px;
+  height: 30px;
+  border: 1px solid lightgrey;
+}
+.titleSection button:hover{
+  border: 1px solid black;
+}
+/* Title @media 800 */
+@media(max-width: 800px){
+.titleSection img{
+  display: none;
+}
+.titleSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.halfWidth h1{
+  font-size: 60px;
+}
+.halfWidth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+/* Mid page */
 .flatBox {
   display:flex;
   justify-content: center;
   border: 1px solid;
   width:98%;
-  margin: 0px auto 30px;
+  margin: 20px auto;
 }
 .paragraphs h2 {
   font-size: 20px;
@@ -133,6 +205,37 @@ a:hover{
   column-count: 2;
   margin: 10px;
 }
+/* Mid page @media */
+@media(max-width: 500px){
+.paragraphs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:10px auto;
+}
+.paragraphs h2{
+  margin:10px auto;
+}
+.paragraphsBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bttmPrgphs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+}
+/* Bttm page */
 .middle-img {
     display: flex;
   width: 98%;
@@ -141,6 +244,7 @@ a:hover{
 .bttmPrgphs {
   column-count: 3;
   margin: 20px 0px;
+  font-weight: bold;
 }
 .phn {
   margin: 20px 0px;
@@ -149,28 +253,85 @@ a:hover{
   margin: 20px;
   text-align: center;
 }
+/* About Page */
+.headerAbout  {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline; 
+}
+.lambdaLogo{
+  display: flex;
+}
+.imgBox{
+  margin: 20px 0;
+  display: flex;
+}
+.imgBox img{
+  width: 100%;
+}
+.navBarAbout {
+  padding: 40px 0 0 0;
+  margin: 0 10px;
+  font-size: 15px; 
+}
+.navBarAbout a {
+  padding: 20px 30px;
+  text-decoration: none;
+  color: black;
+}
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.aboutBox h2{
+  font-size: 20px;
+}
+.boxesBox {
+  display: flex; 
+  flex-flow: wrap;
+  justify-content: center;
+   
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 20px auto;
+}
+.box p{
+  text-align: center;
+}
+.box button{
+  background: white;
+  border: 1px solid lightgrey;
+}
+.bottomBox {
+  margin: 20px;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
 
-
-@media(max-width: 800px){
-body {
-    display:flex;
-    margin: 0 50px 0 0;
-}
-.logo {
-    justify-content: center;
-    order:-1;
-    margin: 0 auto;
-}
-.headerBox{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.headerBox {
-    padding:0 20px 0 0;
-}
-.titleSection img {
-    display:none;
+footer nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
 }
 
+footer nav a {
+  color: white;
+  text-decoration: none;
+  background: none;
 }
