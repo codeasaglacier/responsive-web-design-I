@@ -63,37 +63,30 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Body */
 
-body {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 /* Nav Bar */
 .headerBox {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .navBox{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items:center;
-    margin: 20px 0px;
+    margin: 20px 0;
+    
 }
 nav a {
   text-decoration: none;
-  padding: 15px 15px ;
+  padding: 15px 10px;
   width: 80px;
-  margin: 10px 15px;
   color: grey;
 }
 a:hover{
     color: black;
 }
-.logo {
-  float: left;
-  margin: 0 120px 0 0;
-}
+
 /* Nav @media 800 */
 @media(max-width: 800px){
 .headerBox{
@@ -114,6 +107,7 @@ a:hover{
 }
 /* Nav @media 500 */
 @media(max-width: 500px){
+  
   .headerBox{
     display: flex;
     flex-direction: column;
@@ -122,10 +116,10 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
   }
   .navBox a{
-    box-shadow: 1px;
+    box-shadow: 1px  solid black;
     border-bottom: 1px solid lightgrey;
   }
   .logoBox{
@@ -139,7 +133,7 @@ a:hover{
 /* Title */
 .titleSection {
   display: flex;
-  justify-content:space-between;
+  justify-content:space-evenly;
   width: 100%;
 }
 .halfWidth {
@@ -147,6 +141,7 @@ a:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin:0 auto;
 }
 .titleSection h1 {
   font-size: 90px;
@@ -156,13 +151,13 @@ a:hover{
   background: white;
 }
 .titleSection img {
-  padding: 0px 100px 0px 0px;
-  float: right;
+  margin:0 auto;
 }
 .halfWidth button{
   width: 150px;
   height: 30px;
   border: 1px solid lightgrey;
+  cursor: pointer;
 }
 .titleSection button:hover{
   border: 1px solid black;
@@ -205,7 +200,7 @@ a:hover{
   column-count: 2;
   margin: 10px;
 }
-/* Mid page @media */
+/* Mid and bottom page @media 500 */
 @media(max-width: 500px){
 .paragraphs{
   display: flex;
@@ -235,9 +230,9 @@ a:hover{
   flex-direction: column;
 }
 }
-/* Bttm page */
+/* Bottom page */
 .middle-img {
-    display: flex;
+  display: flex;
   width: 98%;
   margin: 20px auto;
 }
@@ -246,14 +241,15 @@ a:hover{
   margin: 20px 0px;
   font-weight: bold;
 }
-.phn {
-  margin: 20px 0px;
+.footer{
+  display: flex;
+  justify-content: flex-start
 }
 .copyRight {
   margin: 20px;
   text-align: center;
 }
-/* About Page */
+/* About Page Nav */
 .headerAbout  {
   display: flex;
   justify-content: space-evenly;
@@ -279,6 +275,30 @@ a:hover{
   text-decoration: none;
   color: black;
 }
+/* About Page @media800 Nav */
+@media(max-width: 800px){
+.headerAbout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+/* About Page @media500 Nav  */
+@media(max-width: 500px){
+.headerAbout{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+}
+.navBarAbout{
+   display: flex;
+   flex-direction: column;
+}
+}
+/* About Page Mid */
 .aboutBox {
   display: flex;
   flex-direction: column;
@@ -293,7 +313,6 @@ a:hover{
   display: flex; 
   flex-flow: wrap;
   justify-content: center;
-   
 }
 .box {
   display: flex;
@@ -314,9 +333,10 @@ a:hover{
   margin: 20px;
   text-align: center;
 }
+/* Footer */
 footer {
   width: 100%;
-  background: black;
+  /* background: black; */
   display: flex;
   justify-content: center;
 }
